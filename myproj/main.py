@@ -8,7 +8,7 @@ print("Hello World")
 
 # Variables - Date type is optional and inferred: Data Types - int, float, str, bool, list, set, tuple, dict
 # END OF STATEMENT - NEW LINE - NO SEMICOLON NEEDED
-positive_integer=10
+positive_integer = 10
 negative_integer = -5
 number: int = 22
 decimal : float = 5.012345678901234567890123456789
@@ -19,8 +19,19 @@ active : bool = True # or False
 
 # Data Structures
 names: list[str] = ["Alice", "Bob", "Charlie"] # Mutable ordered collection of items
-unique : set[int] = { 2, 3, 5, 1, 89, 3, 5, 1, "antony" } # Set will automatically remove duplicates. Data types can be mixed, but it's generally recommended to use a single data type for sets to avoid confusion. Sets are mutable and unordered collections of unique items.
+unique : set[int] = { 2, 3, 5, 1, 89, 3, 5, 1, "antony" }  # Set will automatically remove duplicates.
+# Data types can be mixed, but it's generally recommended to use a single data type for sets to avoid confusion. Sets are mutable and unordered collections of unique items.
 print(unique)
 coordinates : tuple[float, float] = (1.5, 3.5) # Immutable ordered collection of items
 coordinates2 : tuple = (3, 3.5)
+# Dictionary database
 ages: dict[str, int] = {"Alice": 30, "Bob": 25, "Charlie": 35} # Dictionary is a collection of key-value pairs, where each key is unique and maps to a value. It is mutable and unordered.
+
+# Function definition
+def greet(name: str) -> None: # Function that takes a string argument and returns nothing (void)
+    # F String - Formatted string literals, allow to embed expressions inside string literals, using curly braces {}. They provide a convenient and readable way to format strings.
+    print(f"Hello {name}! How are you")
+
+
+# Function Invocation
+greet("Deepak")
