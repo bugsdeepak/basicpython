@@ -19,7 +19,7 @@ name1: str = "hello world" # Double quotes
 name2: str = 'hello world' # or single quotes
 active : bool = True # or False
 
-# Data Structures
+# DATA STRUCTURE - LIST [], SET { }, TUPLE (), DICTIONARY [,]
 names: list[str] = ["Alice", "Bob", "Charlie"] # Mutable ordered collection of items
 unique : set[int] = { 2, 3, 5, 1, 89, 3, 5, 1, "antony" }  # Set will automatically remove duplicates.
 # Data types can be mixed, but it's generally recommended to use a single data type for sets to avoid confusion. Sets are mutable and unordered collections of unique items.
