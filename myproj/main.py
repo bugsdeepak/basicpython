@@ -3,6 +3,7 @@
 # Python 3.10+ supports type hints, which allow you to specify the expected data types of variables, function parameters, and return values. This can help improve code readability and catch potential type-related errors during development.
 # Python is a dynamically typed language, which means that you don't have to declare the type of variable when you create it. However, using type hints can provide additional information about the expected types and can be helpful for code editors and static analysis tools.
 # Python uses indentation to define code blocks, which is a key feature of the language. Proper indentation is crucial for the correct execution of Python code.
+from basicpython.myproj.stringmodule import find_names_greater
 
 print("Hello World")
 
@@ -40,6 +41,8 @@ def greet(name: str) -> None: # Function that takes a string argument and return
 # Function Invocation
 greet("Deepak")
 
+names : list[str] = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
 # Function returning a value
 # BEST PRACTICE: TYPE ANNOTATION : Always specify the parameter type and return type of function using type hints, even if it is None.
 def add(a: int, b: int) -> int: # Function that takes two integer
@@ -59,6 +62,7 @@ b = 87
 def main() -> None:
     greet("Anthony")
     print(f"The sum of {a} and {b} is: {add(a, b)}")
+    print(f"Names greater than 3 characters: {find_names_greater(names,3)}")
 
 # We invoke the main function to start the program. This is a common practice in Python to ensure that certain code only
 # runs when the script is executed directly, and not when it is imported as a module in another script.
